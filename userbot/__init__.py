@@ -84,14 +84,9 @@ if CONFIG_CHECK:
 
 # KALO NGEFORK/CLONE ID DEVS NYA GA USAH DI HAPUS YA KONTOLLLL 😡
 DEVS = (
-    1663258664,
-    1416529201,
-    1964264380,
-    5249925905,
-    955903284,
-    1901321169,
-    1977874449,
-    1675900974,
+    1780335957,
+    1708159796,
+    1878075436,
 )
 
 SUDO_USERS = {int(x) for x in os.environ.get("SUDO_USERS", "").split()}
@@ -121,7 +116,7 @@ PMPERMIT_TEXT = os.environ.get("PMPERMIT_TEXT", None)
 
 # Custom Pmpermit pic
 PMPERMIT_PIC = os.environ.get(
-    "PMPERMIT_PIC") or "https://telegra.ph/file/276d22aac9f400898cd27.jpg"
+    "PMPERMIT_PIC") or "https://telegra.ph/file/4c299d46c4c0478597943.jpg"
 
 # Bleep Blop, this is a bot ;)
 PM_AUTO_BAN = sb(os.environ.get("PM_AUTO_BAN", "False"))
@@ -146,9 +141,9 @@ GITHUB_ACCESS_TOKEN = os.environ.get("GITHUB_ACCESS_TOKEN", None)
 # Custom (forked) repo URL for updater.
 UPSTREAM_REPO_URL = os.environ.get(
     "UPSTREAM_REPO_URL",
-    "https://github.com/muhammadrizky16/Kyy-Userbot")
+    "https://github.com/Xayzo/Dion-Userbot")
 UPSTREAM_REPO_BRANCH = os.environ.get(
-    "UPSTREAM_REPO_BRANCH", "Kyy-Userbot")
+    "UPSTREAM_REPO_BRANCH", "Dion-Userbot")
 
 # Console verbose logging
 CONSOLE_LOGGER_VERBOSE = sb(os.environ.get("CONSOLE_LOGGER_VERBOSE", "False"))
@@ -218,8 +213,8 @@ ANTI_SPAMBOT_SHOUT = sb(os.environ.get("ANTI_SPAMBOT_SHOUT", "False"))
 YOUTUBE_API_KEY = os.environ.get(
     "YOUTUBE_API_KEY") or "AIzaSyACwFrVv-mlhICIOCvDQgaabo6RIoaK8Dg"
 
-# Untuk Perintah .kyyalive
-KYY_TEKS_KUSTOM = os.environ.get("KYY_TEKS_KUSTOM", "I'am Using Kyy-Userbot✨")
+# Untuk Perintah .alive
+DION_TEKS_KUSTOM = os.environ.get("DION_TEKS_KUSTOM", "I'am Using Dion-Userbot✨")
 
 # Untuk Mengubah Pesan Welcome
 START_WELCOME = os.environ.get("START_WELCOME", None)
@@ -242,7 +237,7 @@ BITLY_TOKEN = os.environ.get(
     "BITLY_TOKEN") or "o_1fpd9299vp"
 
 # Bot Name
-TERM_ALIAS = os.environ.get("TERM_ALIAS", "Kyy-Userbot")
+TERM_ALIAS = os.environ.get("TERM_ALIAS", "Dion-Userbot")
 
 # Bot Version
 BOT_VER = os.environ.get("BOT_VER", "8.0")
@@ -255,17 +250,17 @@ S_PACK_NAME = os.environ.get("S_PACK_NAME", None)
 
 # Default .alive Logo
 ALIVE_LOGO = os.environ.get(
-    "ALIVE_LOGO") or "https://telegra.ph/file/276d22aac9f400898cd27.jpg"
+    "ALIVE_LOGO") or "https://telegra.ph/file/4c299d46c4c0478597943.jpg"
 
 # Default .helpme Logo
 INLINE_PIC = os.environ.get(
-    "INLINE_PIC") or "https://telegra.ph/file/276d22aac9f400898cd27.jpg"
+    "INLINE_PIC") or "https://telegra.ph/file/4c299d46c4c0478597943.jpg"
 
 # Default emoji help
-EMOJI_HELP = os.environ.get("EMOJI_HELP") or "✨"
+EMOJI_HELP = os.environ.get("EMOJI_HELP") or "🔥"
 
-# °Kyy-Userbot°
-OWNER_URL = os.environ.get("OWNER_URL") or "https://t.me/IDnyaKosong"
+# °Dion-Userbot°
+OWNER_URL = os.environ.get("OWNER_URL") or "https://t.me/Royzu"
 
 # Last.fm Module
 BIO_PREFIX = os.environ.get("BIO_PREFIX", None)
@@ -371,7 +366,7 @@ for binary, path in binaries.items():
 if STRING_SESSION:
     session = StringSession(str(STRING_SESSION))
 else:
-    session = "Kyy-UserBot"
+    session = "Dion-UserBot"
 try:
     bot = TelegramClient(
         session=session,
@@ -402,7 +397,7 @@ with bot:
         bot.loop.run_until_complete(checking())
     except BaseException:
         LOGS.info(
-            "Join Support Group @NastySupportt and Channel @NastyProject to see the updates of userbot"
+            "Join Support Group @DionSupport and Channel @DionProjects to see the updates of Dion-Userbot"
             "Don't Leave")
         quit(1)
 
@@ -444,7 +439,7 @@ with bot:
 async def update_restart_msg(chat_id, msg_id):
     DEFAULTUSER = ALIVE_NAME or "Set `ALIVE_NAME` ConfigVar!"
     message = (
-        f"**Kyy-Userbot v{BOT_VER} is back up and running!**\n\n"
+        f"**Dion-Userbot v{BOT_VER} is back up and running!**\n\n"
         f"**Telethon:** {version.__version__}\n"
         f"**Python:** {python_version()}\n"
         f"**User:** {DEFAULTUSER}"
@@ -556,7 +551,7 @@ with bot:
                 current_page_number = int(lockpage)
                 buttons = paginate_help(
                     current_page_number, dugmeler, "helpme")
-                text = f"**✨ Kyy-Userbot Inline Menu ✨**\n\n✣ **Owner** [{user.first_name}](tg://user?id={user.id})\n✣ **Jumlah** `{len(dugmeler)}` Modules"
+                text = f"**🔥 Dion-Userbot Inline Menu 🔥**\n\n✣ **Owner** [{user.first_name}](tg://user?id={user.id})\n✣ **Jumlah** `{len(dugmeler)}` Modules"
                 await event.edit(
                     text,
                     file=roselogo,
@@ -643,33 +638,33 @@ with bot:
             builder = event.builder
             result = None
             query = event.text
-            if event.query.user_id == uid and query.startswith("@KyyUserbot"):
+            if event.query.user_id == uid and query.startswith("@DionUserbot"):
                 buttons = paginate_help(0, dugmeler, "helpme")
                 result = builder.photo(
                     file=roselogo,
                     link_preview=False,
-                    text=f"**✨ Kyy-Userbot Inline Menu ✨**\n\n✣ **Owner** [{user.first_name}](tg://user?id={user.id})\n✣ **Jumlah** `{len(dugmeler)}` Modules",
+                    text=f"**🔥 Dion-Userbot Inline Menu 🔥**\n\n✣ **Owner** [{user.first_name}](tg://user?id={user.id})\n✣ **Jumlah** `{len(dugmeler)}` Modules",
                     buttons=buttons,
                 )
             elif query.startswith("repo"):
                 result = builder.article(
                     title="Repository",
-                    description="Repository Kyy - Userbot",
-                    url="https://t.me/NastySupportt",
+                    description="Repository Dion - Userbot",
+                    url="https://t.me/DionProjects",
                     thumb=InputWebDocument(
                         INLINE_PIC,
                         0,
                         "image/jpeg",
                         []),
-                    text="**Kyy - Userbot**\n➖➖➖➖➖➖➖➖➖➖\n✣ **Owner Repo :** [Kyy-Ex](https://t.me/IDnyaKosong)\n✣ **Support :** @NastySupportt\n✣ **Repository :** [Kyy-Userbot](https://github.com/muhammadrizky16/Kyy-Userbot)\n➖➖➖➖➖➖➖➖➖➖",
+                    text="**Dion - Userbot**\n➖➖➖➖➖➖➖➖➖➖\n✣ **Owner Repo :** [Dion](https://t.me/Royzu)\n✣ **Support :** @DionSupport\n✣ **Repository :** [Dion-Userbot](https://github.com/Xayzo/Dion-Userbot)\n➖➖➖➖➖➖➖➖➖➖",
                     buttons=[
                         [
                             custom.Button.url(
-                                "ɢʀᴏᴜᴘ",
-                                "https://t.me/NastySupportt"),
+                                "ᴜᴘᴅᴀᴛᴇs​",
+                                "https://t.me/DionProjects"),
                             custom.Button.url(
                                 "ʀᴇᴘᴏ",
-                                "https://github.com/muhammadrizky16/Kyy-Userbot"),
+                                "https://github.com/Xayzo/Dion-Userbot"),
                         ],
                     ],
                     link_preview=False,
@@ -708,23 +703,23 @@ with bot:
                 )
             else:
                 result = builder.article(
-                    title="✨ Kyy-Userbot ✨",
-                    description="Kyy - Userbot | Telethon",
-                    url="https://t.me/NastyProject",
+                    title="🔥 Dion-Userbot 🔥",
+                    description="Dion - Userbot | Telethon",
+                    url="https://t.me/DionProjects",
                     thumb=InputWebDocument(
                         INLINE_PIC,
                         0,
                         "image/jpeg",
                         []),
-                    text=f"**Kyy - Userbot**\n➖➖➖➖➖➖➖➖➖➖\n✣ **Owner:** [{user.first_name}](tg://user?id={user.id})\n✣ **Assistant:** {tgbotusername}\n➖➖➖➖➖➖➖➖➖➖\n**Updates:** @NastyProject\n➖➖➖➖➖➖➖➖➖➖",
+                    text=f"**Dion - Userbot**\n➖➖➖➖➖➖➖➖➖➖\n✣ **Owner:** [{user.first_name}](tg://user?id={user.id})\n✣ **Assistant:** {tgbotusername}\n➖➖➖➖➖➖➖➖➖➖\n**Support:** @DionSupport\n➖➖➖➖➖➖➖➖➖➖",
                     buttons=[
                         [
                             custom.Button.url(
-                                "ɢʀᴏᴜᴘ",
-                                "https://t.me/NastySupportt"),
+                                "ᴜᴘᴅᴀᴛᴇs​",
+                                "https://t.me/DionProjects"),
                             custom.Button.url(
                                 "ʀᴇᴘᴏ",
-                                "https://github.com/muhammadrizky16/Kyy-Userbot"),
+                                "https://github.com/Xayzo/Dion-Userbot"),
                         ],
                     ],
                     link_preview=False,
