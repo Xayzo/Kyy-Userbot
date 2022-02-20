@@ -12,9 +12,9 @@ DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else uname().node
 async def usit(e):
     await e.edit(
         f"**Halo {DEFAULTUSER} Jika Anda Tidak Tau Perintah Untuk Memerintah Ku Ketik** `.help` Atau Bisa Minta Bantuan Ke:\n"
-        "\n[Telegram](t.me/IDnyaKosong)"
-        "\n[Repo](https://github.com/S/Kyy-Userbot)"
-        "\n[Instagram](instagram.com/rizkyhamdanii16_)")
+        "\n[Telegram](t.me/Royzu)"
+        "\n[Support](https://t.me/DionSupport)"
+        "\n[Updates](t.me/DionProjects)")
 
 
 @register(outgoing=True, pattern="^.vars$")
