@@ -26,7 +26,7 @@ absen = [
 
 pacar = [
     "**Saya Hadir Untuk Membasmi Para Jamet Telegram** 😎 ",
-    "**Iya Bang kenapa?**",
+    "**Iya Bang Dion kenapa?**",
     "**Uuyy Bang**",
     "**Hadir uyy** 😁",
     "**Saya Hadir Untuk Melindungi Cewe Dari Laki Laki Sangean** 😎",
@@ -85,7 +85,7 @@ async def redis(pong):
     await pong.edit(
         f"**{ALIVE_NAME}**        \n"
         f"**➾Kecepatan : ** '%sms'  \n"
-        f"**➾Branch : ** 'Kyy-Userbot` \n" % (duration)
+        f"**➾Branch : ** 'Dion-Userbot` \n" % (duration)
     )
 
 
@@ -111,19 +111,11 @@ async def redis(pong):
     """For .ping command, ping the userbot from any chat."""
     uptime = await get_readable_time((time.time() - StartTime))
     start = datetime.now()
-    await pong.edit("__Sedang Memuat.__")
-    await pong.edit("__Sedang Memuat..__")
-    await pong.edit("__Sedang Memuat...__")
-    await pong.edit("__Sedang Memuat.__")
-    await pong.edit("__Sedang Memuat..__")
-    await pong.edit("__Sedang Memuat...__")
-    await pong.edit("__Sedang Memuat.__")
-    await pong.edit("__Sedang Memuat..__")
     await pong.edit("__Sedang Memuat...__")
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     await pong.edit(
-        f"**✨ҡʏʏ-υѕєявσт✨**\n"
+        f"**🔥ᴅɪᴏɴ​-υѕєявσт🔥**\n"
         f"➾ __Signal__    __:__ "
         f"`%sms` \n"
         f"➾ __Uptime__ __:__ "
@@ -137,17 +129,11 @@ async def redis(pong):
     uptime = await get_readable_time((time.time() - StartTime))
     start = datetime.now()
     await pong.edit("**Mengecek Sinyal...**")
-    await pong.edit("**0% ▒▒▒▒▒▒▒▒▒▒**")
-    await pong.edit("**20% ██▒▒▒▒▒▒▒▒**")
-    await pong.edit("**40% ████▒▒▒▒▒▒**")
-    await pong.edit("**60% ██████▒▒▒▒**")
-    await pong.edit("**80% ████████▒▒**")
-    await pong.edit("**100% ██████████**")
     await asyncio.sleep(2)
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     await pong.edit(
-        f"**✨ ҡʏʏ-υѕєявσт ✨**\n\n"
+        f"**🔥 ᴅɪᴏɴ​-υѕєявσт 🔥**\n\n"
         f"** ▹  Sɪɢɴᴀʟ   :** "
         f"`%sms` \n"
         f"** ▹  Uᴘᴛɪᴍᴇ  :** "
@@ -161,9 +147,7 @@ async def pingme(pong):
     """For .ping command, ping the userbot from any chat."""
     uptime = await get_readable_time((time.time() - StartTime))
     start = datetime.now()
-    await pong.edit("**✣**")
-    await pong.edit("**✣✣**")
-    await pong.edit("**✣✣✣**")
+    await pong.edit("**Pinging...**")
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     await pong.edit(
@@ -200,7 +184,7 @@ async def speedtst(spd):
         f"`{result['ping']}` \n"
         "✧ **ISP:** "
         f"`{result['client']['isp']}` \n"
-        "✧ **BOT:** ✨ҡʏʏ-υѕєявσт✨"
+        "✧ **BOT:** 🔥ᴅɪᴏɴ​-υѕєявσт🔥"
     )
 
 
@@ -227,7 +211,7 @@ async def pingme(pong):
     await asyncio.sleep(2)
     end = datetime.now()
     duration = (end - start).microseconds / 9000
-    await pong.edit(f"**✨KyyName : {ALIVE_NAME}**\n📗 `%sms`" % (duration))
+    await pong.edit(f"**🔥DionName : {ALIVE_NAME}**\n📗 `%sms`" % (duration))
 
 
 @kyy_cmd(pattern="pink$")
