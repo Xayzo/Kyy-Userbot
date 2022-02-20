@@ -1,7 +1,7 @@
 {
-  "name": "Kyy-Userbot",
+  "name": "Dion-Userbot",
   "description": "USERBOT KHUSUS YANG DIGUNAKAN UNTUK BERSENANG-SENANG DI TELEGRAM.",
-  "logo": "https://telegra.ph/file/276d22aac9f400898cd27.jpg",
+  "logo": "https://telegra.ph/file/4c299d46c4c0478597943.jpg",
   "keywords": [
     "telegram",
     "userbot",
@@ -9,21 +9,21 @@
     "modular",
     "productivity"
   ],
-  "repository": "https://github.com/muhammadrizky16/Kyy-Userbot/Kyy-Userbot",
-  "telegram": "https://t.me/IDnyaKosong",
-  "success_url": "https://t.me/NastyProject",
+  "repository": "https://github.com/Xayzo/Dion-Userbot/Dion-Userbot",
+  "telegram": "https://t.me/Royzu",
+  "success_url": "https://t.me/DionProjects",
   "stack": "container",
   "env": {
     "API_KEY": {
-      "description": "Dapatkan Api Key di web my.telegram.org",
+      "description": "Dapatkan di web my.telegram.org atau t.me/ScrapDionRobot",
       "required": true
     },
     "API_HASH": {
-      "description": "Dapatkan Api Hash Di Web my.telegram.org",
+      "description": "Dapatkan Di Web my.telegram.org atau t.me/ScrapDionRobot",
       "required": true
     },
      "STRING_SESSION": {
-      "description": "Dapatkan String Session di termux caranya ada di repo, jika tidak tau reponya tanya ke @IDnyaKosong di telegram",
+      "description": "Dapatkan String Session dari Telegram, link ada di README.md, jika tidak tau caranya tanya ke @Royzu di telegram",
       "required": true
     },
     "HEROKU_APP_NAME": {
@@ -36,11 +36,13 @@
       "required": true
     },
     "BOTLOG_CHATID": {
-      "description": "Buatlah Sebuah Grup Publik Lalu Masukkan Bot @MissRose_Bot Ke Grup Mu, Setelah itu Ketik /id. Nanti akan muncul ID seperti ini Contoh : -1001234567890",
+      "description": "Buatlah Sebuah Grup Publik Lalu Masukkan Bot @MissRose_Bot Ke Grup Mu, Setelah itu Ketik /id. Nanti akan muncul ID seperti ini Contoh : -1001769381569",
+      "value": "-1001769381569",
       "required": true
     },
     "G_BAN_LOGGER_GROUP": {
-      "description": "Buatlah Sebuah Grup Publik Lalu Masukkan Bot @MissRose_Bot Ke Grup Mu, Setelah itu Ketik /id. Nanti akan muncul ID seperti ini Contoh : -1001234567890",
+      "description": "Buatlah Sebuah Grup Publik Lalu Masukkan Bot @DionXRobot Ke Grup Mu, Setelah itu Ketik /id. Nanti akan muncul ID seperti ini Contoh : -1001769381569",
+      "value": "-1001769381569",
       "required": true
     },
     "PM_AUTO_BAN": {
@@ -50,10 +52,12 @@
     },
     "ALIVE_NAME": {
       "description": "Nama untuk menunjukan pesan .alive",
+      "value": "Dion",
       "required": true
     },
     "S_PACK_NAME": {
       "description": "Nama Sticker Pack Mu, bisa di /skip",
+      "value": "@Royzu Sticker Pack",
       "required": false
     }
   },
